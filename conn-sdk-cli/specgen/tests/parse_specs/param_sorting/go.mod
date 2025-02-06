@@ -4,7 +4,7 @@ go 1.23.2
 
 require (
 	github.com/conduitio/conduit-commons v0.5.0
-	github.com/conduitio/conduit-connector-sdk v0.0.0
+	github.com/derElektroBesen/conduit-connector-sdk v0.0.0
 )
 
 require (
@@ -234,4 +234,4 @@ require (
 	mvdan.cc/unparam v0.0.0-20240528143540-8a5130ca722f // indirect
 )
 
-replace github.com/conduitio/conduit-connector-sdk => ../../../../../
+replace github.com/derElektroBesen/conduit-connector-sdk => ../../../../../

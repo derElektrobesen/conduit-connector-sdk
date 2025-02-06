@@ -17,7 +17,7 @@ package sdk
 import (
 	"context"
 
-	"github.com/conduitio/conduit-connector-sdk/internal"
+	"github.com/derElektroBesen/conduit-connector-sdk/internal"
 )
 
 // ConnectorIDFromContext fetches the connector ID from the context. If the

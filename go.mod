@@ -1,4 +1,4 @@
-module github.com/conduitio/conduit-connector-sdk
+module github.com/derElektroBesen/conduit-connector-sdk
 
 go 1.23.2
 

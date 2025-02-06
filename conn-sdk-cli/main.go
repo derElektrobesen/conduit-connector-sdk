@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/conduitio/conduit-connector-sdk/conn-sdk-cli/readmegen"
-	"github.com/conduitio/conduit-connector-sdk/conn-sdk-cli/specgen"
+	"github.com/derElektroBesen/conduit-connector-sdk/conn-sdk-cli/readmegen"
+	"github.com/derElektroBesen/conduit-connector-sdk/conn-sdk-cli/specgen"
 	"github.com/spf13/cobra"
 )
 

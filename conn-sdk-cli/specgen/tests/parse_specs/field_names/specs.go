@@ -17,7 +17,7 @@ package field_names
 import (
 	"time"
 
-	sdk "github.com/conduitio/conduit-connector-sdk"
+	sdk "github.com/derElektroBesen/conduit-connector-sdk"
 )
 
 type EmbeddedConfig struct {

@@ -22,8 +22,8 @@ import (
 	"example.com/overwrite_source_destination"
 	"example.com/partial_specification"
 	"example.com/simple"
-	sdk "github.com/conduitio/conduit-connector-sdk"
-	"github.com/conduitio/conduit-connector-sdk/conn-sdk-cli/specgen"
+	sdk "github.com/derElektroBesen/conduit-connector-sdk"
+	"github.com/derElektroBesen/conduit-connector-sdk/conn-sdk-cli/specgen"
 	"github.com/google/go-cmp/cmp"
 	"github.com/matryer/is"
 )

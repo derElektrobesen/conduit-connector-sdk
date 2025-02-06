@@ -2,9 +2,9 @@ module example.com/type_aliases
 
 go 1.23.2
 
-replace github.com/conduitio/conduit-connector-sdk => ../../../../../
+replace github.com/derElektroBesen/conduit-connector-sdk => ../../../../../
 
-require github.com/conduitio/conduit-connector-sdk v0.0.0-00010101000000-000000000000
+require github.com/derElektroBesen/conduit-connector-sdk v0.0.0-00010101000000-000000000000
 
 require (
 	4d63.com/gocheckcompilerdirectives v1.2.1 // indirect

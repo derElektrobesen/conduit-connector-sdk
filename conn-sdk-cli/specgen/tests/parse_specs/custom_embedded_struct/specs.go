@@ -15,7 +15,7 @@
 package custom_embedded_struct
 
 import (
-	sdk "github.com/conduitio/conduit-connector-sdk"
+	sdk "github.com/derElektroBesen/conduit-connector-sdk"
 )
 
 // GlobalConfig is a reusable config struct used in the source and destination

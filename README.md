@@ -2,8 +2,8 @@
 
 [![License](https://img.shields.io/badge/license-Apache%202-blue)](https://github.com/ConduitIO/conduit-connector-sdk/blob/main/LICENSE.md)
 [![Test](https://github.com/ConduitIO/conduit-connector-sdk/actions/workflows/test.yml/badge.svg)](https://github.com/ConduitIO/conduit-connector-sdk/actions/workflows/test.yml)
-[![Go Report Card](https://goreportcard.com/badge/github.com/conduitio/conduit-connector-sdk)](https://goreportcard.com/report/github.com/conduitio/conduit-connector-sdk)
-[![Go Reference](https://pkg.go.dev/badge/github.com/conduitio/conduit-connector-sdk.svg)](https://pkg.go.dev/github.com/conduitio/conduit-connector-sdk)
+[![Go Report Card](https://goreportcard.com/badge/github.com/derElektroBesen/conduit-connector-sdk)](https://goreportcard.com/report/github.com/derElektroBesen/conduit-connector-sdk)
+[![Go Reference](https://pkg.go.dev/badge/github.com/derElektroBesen/conduit-connector-sdk.svg)](https://pkg.go.dev/github.com/derElektroBesen/conduit-connector-sdk)
 
 This repository contains the Go software development kit for implementing a connector for
 [Conduit](https://github.com/conduitio/conduit). If you want to implement a connector in another language please
@@ -19,24 +19,24 @@ go mod init example.com/conduit-connector-demo
 Add the connector SDK dependency:
 
 ```
-go get github.com/conduitio/conduit-connector-sdk
+go get github.com/derElektroBesen/conduit-connector-sdk
 ```
 
 With this you can start implementing the connector. To implement a source (a connector that reads from a 3rd party
 resource and sends data to Conduit) create a struct that implements
-[`sdk.Source`](https://pkg.go.dev/github.com/conduitio/conduit-connector-sdk#Source). To implement a destination (a
+[`sdk.Source`](https://pkg.go.dev/github.com/derElektroBesen/conduit-connector-sdk#Source). To implement a destination (a
 connector that receives data from Conduit and writes it to a 3rd party resource) create a struct that implements
-[`sdk.Destination`](https://pkg.go.dev/github.com/conduitio/conduit-connector-sdk#Destination). You can implement both to
+[`sdk.Destination`](https://pkg.go.dev/github.com/derElektroBesen/conduit-connector-sdk#Destination). You can implement both to
 make a connector that can be used both as a source or a destination.
 
 Apart from the source and/or destination you should create a global variable of type
-[`sdk.Connector`](https://pkg.go.dev/github.com/conduitio/conduit-connector-sdk#Connector) that contains references to
-constructors for [`sdk.Source`](https://pkg.go.dev/github.com/conduitio/conduit-connector-sdk#Source),
-[`sdk.Destination`](https://pkg.go.dev/github.com/conduitio/conduit-connector-sdk#Destination) and
-[`sdk.Specification`](https://pkg.go.dev/github.com/conduitio/conduit-connector-sdk#Specification).
+[`sdk.Connector`](https://pkg.go.dev/github.com/derElektroBesen/conduit-connector-sdk#Connector) that contains references to
+constructors for [`sdk.Source`](https://pkg.go.dev/github.com/derElektroBesen/conduit-connector-sdk#Source),
+[`sdk.Destination`](https://pkg.go.dev/github.com/derElektroBesen/conduit-connector-sdk#Destination) and
+[`sdk.Specification`](https://pkg.go.dev/github.com/derElektroBesen/conduit-connector-sdk#Specification).
 
 The last part is the entrypoint, it needs to call
-[`sdk.Serve`](https://pkg.go.dev/github.com/conduitio/conduit-connector-sdk#Serve) and pass in the connector
+[`sdk.Serve`](https://pkg.go.dev/github.com/derElektroBesen/conduit-connector-sdk#Serve) and pass in the connector
 mentioned above.
 
 ```go
@@ -44,7 +44,7 @@ package main
 
 import (
 	demo "example.com/conduit-connector-demo"
-	sdk "github.com/conduitio/conduit-connector-sdk"
+	sdk "github.com/derElektroBesen/conduit-connector-sdk"
 )
 
 func main() {
@@ -77,7 +77,7 @@ Here is an example request to `POST /v1/connectors` (find more about the [Condui
 }
 ```
 
-Find out more information on building a connector in the [Go doc reference](https://pkg.go.dev/github.com/conduitio/conduit-connector-sdk).
+Find out more information on building a connector in the [Go doc reference](https://pkg.go.dev/github.com/derElektroBesen/conduit-connector-sdk).
 
 ## FAQ
 
@@ -127,7 +127,7 @@ debugging as easy as possible (e.g. stack trace, information about the value tha
 
 **Q: Is there a standard format for logging?**
 
-Developers should use [`sdk.Logger`](https://pkg.go.dev/github.com/conduitio/conduit-connector-sdk#Logger) to retrieve a
+Developers should use [`sdk.Logger`](https://pkg.go.dev/github.com/derElektroBesen/conduit-connector-sdk#Logger) to retrieve a
 [`*zerolog.Logger`](https://pkg.go.dev/github.com/rs/zerolog#Logger) instance. It can be used to emit structured and leveled
 log messages that will be included in Conduit logs.
 
@@ -154,7 +154,7 @@ In case of the destination connector you do not have to worry about ordering. Co
 they were produced in the source.
 
 On the other hand, the source connector is in charge of producing records and thus dictates the order. That said, you do not have
-to worry about concurrent reads, the SDK will call [`Source.Read`](https://pkg.go.dev/github.com/conduitio/conduit-connector-sdk#Source)
+to worry about concurrent reads, the SDK will call [`Source.Read`](https://pkg.go.dev/github.com/derElektroBesen/conduit-connector-sdk#Source)
 repeatedly and only in one goroutine, all you have to do is return one record at a time.
 
 ## Examples

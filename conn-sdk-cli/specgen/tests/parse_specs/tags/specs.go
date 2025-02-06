@@ -15,7 +15,7 @@
 package tags
 
 import (
-	sdk "github.com/conduitio/conduit-connector-sdk"
+	sdk "github.com/derElektroBesen/conduit-connector-sdk"
 )
 
 // SourceConfig is a configuration testing the usage of SDK parameter tags

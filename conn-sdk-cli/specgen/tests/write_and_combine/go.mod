@@ -1,4 +1,4 @@
-module github.com/conduitio/conduit-connector-sdk/conn-sdk-cli/specgen/testdata
+module github.com/derElektroBesen/conduit-connector-sdk/conn-sdk-cli/specgen/testdata
 
 go 1.23.2
 
@@ -8,14 +8,14 @@ replace (
 	example.com/partial_specification => ./partial_specification
 	example.com/simple => ./simple
 
-	github.com/conduitio/conduit-connector-sdk => ../../../../
+	github.com/derElektroBesen/conduit-connector-sdk => ../../../../
 )
 
 require (
 	example.com/overwrite_source_destination v0.0.0-00010101000000-000000000000
 	example.com/partial_specification v0.0.0-00010101000000-000000000000
 	example.com/simple v0.0.0-00010101000000-000000000000
-	github.com/conduitio/conduit-connector-sdk v0.0.0
+	github.com/derElektroBesen/conduit-connector-sdk v0.0.0
 	github.com/google/go-cmp v0.6.0
 	github.com/matryer/is v1.4.1
 )

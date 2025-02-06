@@ -25,7 +25,7 @@ import (
 	"github.com/conduitio/conduit-commons/config"
 	"github.com/conduitio/conduit-commons/opencdc"
 	"github.com/conduitio/conduit-connector-protocol/pconnector"
-	"github.com/conduitio/conduit-connector-sdk/internal"
+	"github.com/derElektroBesen/conduit-connector-sdk/internal"
 	"github.com/matryer/is"
 	"github.com/rs/zerolog"
 	"go.uber.org/mock/gomock"

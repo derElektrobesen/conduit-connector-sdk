@@ -2,7 +2,7 @@ module example.com/field_names
 
 go 1.23.2
 
-require github.com/conduitio/conduit-connector-sdk v0.0.0
+require github.com/derElektroBesen/conduit-connector-sdk v0.0.0
 
 require (
 	4d63.com/gocheckcompilerdirectives v1.2.1 // indirect
@@ -232,4 +232,4 @@ require (
 	mvdan.cc/unparam v0.0.0-20240528143540-8a5130ca722f // indirect
 )
 
-replace github.com/conduitio/conduit-connector-sdk => ../../../../../
+replace github.com/derElektroBesen/conduit-connector-sdk => ../../../../../

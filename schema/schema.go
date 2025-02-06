@@ -21,7 +21,7 @@ import (
 	"github.com/conduitio/conduit-commons/schema"
 	"github.com/conduitio/conduit-connector-protocol/pconnutils"
 	"github.com/conduitio/conduit-connector-protocol/pconnutils/v1/client"
-	"github.com/conduitio/conduit-connector-sdk/internal"
+	"github.com/derElektroBesen/conduit-connector-sdk/internal"
 	"google.golang.org/grpc"
 )
 

@@ -26,8 +26,8 @@ import (
 	"github.com/conduitio/conduit-commons/config"
 	"github.com/conduitio/conduit-commons/paramgen/paramgen"
 	"github.com/conduitio/conduit-connector-protocol/pconnector"
-	sdk "github.com/conduitio/conduit-connector-sdk"
-	v1 "github.com/conduitio/conduit-connector-sdk/conn-sdk-cli/specgen/model/v1"
+	sdk "github.com/derElektroBesen/conduit-connector-sdk"
+	v1 "github.com/derElektroBesen/conduit-connector-sdk/conn-sdk-cli/specgen/model/v1"
 	"gopkg.in/yaml.v3"
 )
 

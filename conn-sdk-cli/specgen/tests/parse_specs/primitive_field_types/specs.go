@@ -20,7 +20,7 @@ import (
 	"time"
 
 	"github.com/conduitio/conduit-commons/lang"
-	sdk "github.com/conduitio/conduit-connector-sdk"
+	sdk "github.com/derElektroBesen/conduit-connector-sdk"
 )
 
 // SourceConfig this comment will be ignored.

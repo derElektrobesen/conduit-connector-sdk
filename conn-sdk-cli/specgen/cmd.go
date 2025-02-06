@@ -120,8 +120,8 @@ func (cmd *Command) runInDir(ctx context.Context, program []byte, dir string) ([
 	if err := command.Run(); err != nil {
 		sErr := buf.String()
 		if strings.Contains(sErr, `cannot find package "."`) &&
-			strings.Contains(sErr, "github.com/conduitio/conduit-connector-sdk") {
-			fmt.Fprint(os.Stderr, "Please upgrade to the latest version of the connector SDK (go get github.com/conduitio/conduit-connector-sdk@latest)\n")
+			strings.Contains(sErr, "github.com/derElektroBesen/conduit-connector-sdk") {
+			fmt.Fprint(os.Stderr, "Please upgrade to the latest version of the connector SDK (go get github.com/derElektroBesen/conduit-connector-sdk@latest)\n")
 			return nil, err
 		}
 		return nil, err
@@ -145,7 +145,7 @@ import (
 	"os"
 
 	pkg_ {{ printf "%q" .ImportPath }}
-	"github.com/conduitio/conduit-connector-sdk/conn-sdk-cli/specgen"
+	"github.com/derElektroBesen/conduit-connector-sdk/conn-sdk-cli/specgen"
 )
 
 func main() {

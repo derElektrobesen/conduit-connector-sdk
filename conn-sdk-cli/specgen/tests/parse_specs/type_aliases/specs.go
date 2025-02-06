@@ -17,7 +17,7 @@ package type_aliases
 import (
 	"time"
 
-	sdk "github.com/conduitio/conduit-connector-sdk"
+	sdk "github.com/derElektroBesen/conduit-connector-sdk"
 )
 
 type SourceConfig struct {

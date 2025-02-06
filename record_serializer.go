@@ -22,7 +22,7 @@ import (
 
 	"github.com/Masterminds/sprig/v3"
 	"github.com/conduitio/conduit-commons/opencdc"
-	"github.com/conduitio/conduit-connector-sdk/kafkaconnect"
+	"github.com/derElektroBesen/conduit-connector-sdk/kafkaconnect"
 	"github.com/goccy/go-json"
 )
 

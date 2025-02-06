@@ -21,7 +21,7 @@ package kafka
 import (
 	_ "embed"
 
-	sdk "github.com/conduitio/conduit-connector-sdk"
+	sdk "github.com/derElektroBesen/conduit-connector-sdk"
 )
 
 //go:embed connector.yaml

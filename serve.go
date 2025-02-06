@@ -22,8 +22,8 @@ import (
 	"github.com/conduitio/conduit-connector-protocol/pconnector"
 	"github.com/conduitio/conduit-connector-protocol/pconnector/server"
 	"github.com/conduitio/conduit-connector-protocol/pconnutils"
-	v1 "github.com/conduitio/conduit-connector-sdk/conn-sdk-cli/specgen/model/v1"
-	"github.com/conduitio/conduit-connector-sdk/internal"
+	v1 "github.com/derElektroBesen/conduit-connector-sdk/conn-sdk-cli/specgen/model/v1"
+	"github.com/derElektroBesen/conduit-connector-sdk/internal"
 	"github.com/conduitio/yaml/v3"
 	"github.com/rs/zerolog"
 )
